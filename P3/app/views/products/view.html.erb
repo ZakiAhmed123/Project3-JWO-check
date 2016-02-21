@@ -1,0 +1,16 @@
+<%= image_tag "#{@product.img_file}.jpg" %>
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Price</th>
+    <th>Description</th>
+    <th> Dimensions </th>
+  <tr>
+<td><%= @product.item %></td>
+<td>$<%= @product.price.to_f %></td>
+<td><%= @product.description %></td>
+<td><%= @product.dimension_w %></td>
+<td><%= @product.dimension_l %></td>
+<td><%= @product.dimension_h %></td>
+</tr>
+</table>

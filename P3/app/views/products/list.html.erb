@@ -1,0 +1,12 @@
+
+<table>
+    <% @products.each do |product| %>
+    <tr>
+    <td><%= image_tag "#{product.img_file}.jpg" %> </td>
+    <td><%= product.item %></td>
+    <td>$<%= product.price.to_f %></td>
+    <td><p> <%= link_to "More Info", "/products/#{product.pid}" %> </p></td>
+    <td><p> <%= product.quantity %></td>
+  </tr>
+  <% end %>
+</table>
